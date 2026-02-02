@@ -1,6 +1,6 @@
 interface Student {
     name: string;
-    mark: number;
+    readonly mark: number;
 };
 
 
