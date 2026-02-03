@@ -9,3 +9,7 @@ function printId(a) {
 }
 printId("jaseel");
 printId(10);
+let role;
+role = "admin";
+role = "Anzil";
+console.log(role);
