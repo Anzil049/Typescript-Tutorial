@@ -32,21 +32,21 @@ console.log(wrapValue(100));
 
 //intersection type
 
-type User= {
+type User = {
     name: string;
     email: string;
 }
 
-type Admin= {
+type Admin = {
     role: string;
 }
 
-type AdminUser= User & Admin ;
+type AdminUser = User & Admin;
 
-let userAdmin:AdminUser={
-    name:"Anzil",
-    email:"anzil049@gmail.com",
-    role:"Admin"
+let userAdmin: AdminUser = {
+    name: "Anzil",
+    email: "anzil049@gmail.com",
+    role: "Admin"
 }
 
 console.log(userAdmin);
