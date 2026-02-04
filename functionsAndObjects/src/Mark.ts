@@ -22,19 +22,19 @@ function checkResult(student: Student): string {
     return student.mark >= 40 ? "pass" : "fail"
 }
 
-function calculateGrade(student:Student):string{
-    if(student.mark>=80){
+function calculateGrade(student: Student): string {
+    if (student.mark >= 80) {
         return "A";
-    }else if(student.mark>=60){
+    } else if (student.mark >= 60) {
         return "B"
-    }else if(student.mark>=40){
+    } else if (student.mark >= 40) {
         return "C"
-    }else{
+    } else {
         return "D"
     }
 }
 
-students.forEach((student)=>{
+students.forEach((student) => {
     console.log(`${student.name}:${checkResult(student)},grade:${calculateGrade(student)}`);
 });
 
