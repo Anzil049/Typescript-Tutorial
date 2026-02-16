@@ -6,20 +6,35 @@
 // console.log(hello(10))
 
 
-interface User{
-    name:string;
-    age?:number;
+// interface User{
+//     name:string;
+//     age?:number;
+// }
+
+// const person:User={
+//     name:"Anzil",
+// }
+
+// const person2:User={
+//     name:"rahul",
+//     age:20
+
+// }
+
+// console.log(person);
+// console.log(person2);
+
+
+
+//optional types
+// type isString<T>=T extends string?"Yes":"No";
+
+// type T1=isString<string>
+// type T2=isString<number>
+
+function findLength<T extends {length:number}>(value:T){
+    console.log(value.length);
 }
 
-const person:User={
-    name:"Anzil",
-}
-
-const person2:User={
-    name:"rahul",
-    age:20
-
-}
-
-console.log(person);
-console.log(person2);
+findLength("anzil");
+findLength([1,2,3,4,5]);
