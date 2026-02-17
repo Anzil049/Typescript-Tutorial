@@ -1,3 +1,4 @@
+
 class Person {
     name: string;
     age: number;
@@ -12,16 +13,21 @@ class Person {
     }
 }
 
+
 class Teacher extends Person {
+
     subject: string;
 
     constructor(name: string, age: number, subject: string) {
         super(name, age);
         this.subject = subject;
     }
+
     teach(): void {
         console.log(`${this.name} teaches ${this.subject}`);
     }
+
+
 }
 
 const teacher1 = new Teacher("Anzil", 21, "MERN");
