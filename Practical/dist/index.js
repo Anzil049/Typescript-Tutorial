@@ -28,5 +28,5 @@ function Gradestatus(student) {
     }
 }
 students.forEach((student) => {
-    console.log(`${student.name}:${Markstatus(student)},${Gradestatus(student)}`);
+    console.log(`${student.name}:${Markstatus(student)},${Gradestatus(student)},${student.mark}`);
 });

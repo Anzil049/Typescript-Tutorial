@@ -32,6 +32,6 @@ function Gradestatus(student:Student):string{
 }
 
 students.forEach((student)=>{
-    console.log(`${student.name}:${Markstatus(student)},${Gradestatus(student)}`)
+    console.log(`${student.name}:${Markstatus(student)},${Gradestatus(student)},${student.mark}`)
 })
 
